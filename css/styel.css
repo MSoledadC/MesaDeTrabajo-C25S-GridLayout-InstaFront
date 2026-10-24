@@ -8,14 +8,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-article {
-    padding: 20px;
-}
-
-h2 {
-    color: #262626;
-}
-
 i {
     color: black;
     font-size: 24px;
@@ -43,13 +35,15 @@ i {
 
 .img-header {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 49px;
 
 }
 
 .item1 {
     color: black;
+    font-size: 25px;
+    font-weight: 400;
 }
 
 .item2 {
@@ -71,6 +65,12 @@ i {
     background-color: #FFFFFF;
 }
 
+.img-historias {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
 .historia-5,
 .historia-6,
 .historia-7 {
@@ -90,35 +90,53 @@ i {
 
 .card-encabezado {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    border-bottom: 0.4px solid #22222280;
+    padding: 10px;
+    gap: 10px;
+}
 
+.card-encabezado h2 {
+    font-size: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .card-img {
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
+    padding-top: 10px;
 }
 
 
 
 .card-img-perfil {
-    width: 100%;
-    max-width: 100%;
+    width: 90%;
+    max-width: 90%;
     height: auto;
+    justify-self: center;
+}
+
+.card-iconos,
+.card-textos {
+    padding: 0px 20px;
 }
 
 .card-cuerpo p {
     color: #000000;
     font-size: 10px;
     font-weight: 400;
+    padding: 5px;
 }
 
 .card-cuerpo span {
     color: #A49B9B;
     font-size: 10px;
     font-weight: 400;
+    padding: 5px;
 }
 
 .area-sidebar {
