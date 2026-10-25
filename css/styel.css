@@ -153,3 +153,97 @@ i {
     padding: 5px;
     text-align: center;
 }
+
+/* TABLET*/
+@media (min-width: 768px) {
+    /* Acá vas a poner los cambios para pantallas medianas */
+
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    .container-grid-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "header header header"
+            "main main sidebar"
+            "footer footer footer";
+    }
+
+    .area-header {
+        grid-area: header;
+        background-color: #FFFFFF;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        padding: 10px;
+        border-bottom: 0.4px solid #22222280
+    }
+
+    .item2 {
+        display: grid;
+        border: 0.3px solid #222222;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .area-main {
+        padding: 0px 30px;
+        width: 100%;
+    }
+
+    .historia-5,
+    .historia-6,
+    .historia-7 {
+        display: grid;
+    }
+
+    .area-sidebar {
+        display: inline-block;
+        display: grid;
+        align-content: start;
+        padding: 20px 20px 0px 0px;
+    }
+
+    .sidebar-cuerpo {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        /* Foto | Textos del medio | Botón Cambiar */
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+
+    }
+
+    .img-sidebar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .sidebar-cuerpo h2 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .sidebar-cuerpo span {
+        font-size: 10px;
+        font-weight: 400;
+        color: #808080;
+        font: menu;
+        letter-spacing: 2px;
+    }
+
+    .sidebar-cuerpo a {
+        font-size: 12px;
+        font-weight: 500;
+        color: #1CA0F6;
+    }
+
+    .card-iconos,
+    .card-textos {
+        padding: 0px 24px;
+    }
+
+
+}
